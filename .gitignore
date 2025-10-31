@@ -1,0 +1,39 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# SSH keys (NEVER commit these!)
+*.pem
+*.key
+id_rsa*
+agents2automate_deploy*
+
+# Logs
+*.log
+logs/
+
+# Backup files
+*.bak
+*.backup
+backups/
+
+# Environment files
+.env
+.env.local
+
+# Node modules
+node_modules/
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
