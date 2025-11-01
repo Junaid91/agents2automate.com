@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" width="820" height="312">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f2f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8eaed;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="phoneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#25D366;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#128C7E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="820" height="312" fill="url(#bgGradient)"/>
+  
+  <!-- Left Side: Phone Mockup -->
+  <g transform="translate(80, 36)">
+    <!-- Phone Frame -->
+    <rect x="0" y="0" width="200" height="240" rx="20" fill="#1c1e21"/>
+    <rect x="8" y="8" width="184" height="224" rx="15" fill="white"/>
+    
+    <!-- WhatsApp Header -->
+    <rect x="8" y="8" width="184" height="35" rx="15" fill="url(#phoneGradient)"/>
+    <text x="25" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Fashion Store UK</text>
+    <circle cx="170" cy="25" r="8" fill="#34D859"/>
+    
+    <!-- Chat Messages -->
+    <!-- Customer message -->
+    <rect x="90" y="55" width="95" height="28" rx="8" fill="#E5E5EA"/>
+    <text x="95" y="72" font-family="Arial, sans-serif" font-size="9" fill="#000">Looking for a shirt</text>
+    
+    <!-- AI message -->
+    <rect x="20" y="90" width="110" height="38" rx="8" fill="#25D366"/>
+    <text x="25" y="105" font-family="Arial, sans-serif" font-size="8" fill="white">Hello! I'd be happy</text>
+    <text x="25" y="117" font-family="Arial, sans-serif" font-size="8" fill="white">to help you find the</text>
+    
+    <!-- Customer message -->
+    <rect x="75" y="135" width="110" height="28" rx="8" fill="#E5E5EA"/>
+    <text x="80" y="152" font-family="Arial, sans-serif" font-size="9" fill="#000">Can you do £38?</text>
+    
+    <!-- AI message with deal -->
+    <rect x="20" y="170" width="130" height="50" rx="8" fill="#25D366"/>
+    <text x="25" y="185" font-family="Arial, sans-serif" font-size="8" fill="white">✓ Deal! £38 it is 🤝</text>
+    <text x="25" y="197" font-family="Arial, sans-serif" font-size="7" fill="white">+ FREE next-day delivery</text>
+    <text x="25" y="209" font-family="Arial, sans-serif" font-size="7" fill="white">You saved £7 (15% off)</text>
+  </g>
+  
+  <!-- Right Side: Main Content -->
+  <g transform="translate(320, 50)">
+    <!-- Main Headline -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#1c1e21">
+      AI-Powered WhatsApp
+    </text>
+    <text x="0" y="40" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#1c1e21">
+      Automation
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="70" font-family="Arial, sans-serif" font-size="14" fill="#65676b">
+      Transform customer communication with intelligent AI
+    </text>
+    
+    <!-- Features -->
+    <g transform="translate(0, 100)">
+      <!-- Feature 1 -->
+      <circle cx="0" cy="0" r="6" fill="#25D366"/>
+      <text x="15" y="5" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1c1e21">
+        24/7 Automated Responses
+      </text>
+      
+      <!-- Feature 2 -->
+      <circle cx="0" cy="30" r="6" fill="#25D366"/>
+      <text x="15" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1c1e21">
+        Multi-Language Support
+      </text>
+      <text x="220" y="35" font-family="Arial, sans-serif" font-size="14" fill="#65676b">
+        🇬🇧 🇩🇪 🇪🇸 🇵🇰 🇮🇳
+      </text>
+      
+      <!-- Feature 3 -->
+      <circle cx="0" cy="60" r="6" fill="#25D366"/>
+      <text x="15" y="65" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#1c1e21">
+        Smart Negotiations & Sales
+      </text>
+    </g>
+    
+    <!-- Website URL -->
+    <g transform="translate(0, 195)">
+      <rect x="-5" y="-18" width="280" height="30" rx="5" fill="#25D366" opacity="0.1"/>
+      <text x="0" y="0" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#25D366">
+        www.agents2automate.com
+      </text>
+    </g>
+  </g>
+  
+  <!-- Bottom Right: Small Robot Icon -->
+  <g transform="translate(760, 260)">
+    <circle cx="0" cy="0" r="25" fill="#25D366" opacity="0.2"/>
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="30" text-anchor="middle" dominant-baseline="central">
+      🤖
+    </text>
+  </g>
+</svg>
