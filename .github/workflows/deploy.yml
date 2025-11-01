@@ -27,7 +27,7 @@ jobs:
       - name: 📦 Prepare deployment package
         run: |
           echo "Creating deployment package..."
-          tar -czf deploy.tar.gz index.html public/ 2>/dev/null || tar -czf deploy.tar.gz index.html
+          tar -czf deploy.tar.gz *.html public/ 2>/dev/null || tar -czf deploy.tar.gz index.html
           ls -lh deploy.tar.gz
 
       - name: 🔑 Setup SSH
@@ -56,9 +56,9 @@ jobs:
             sudo cp -r /var/www/agents2automate.com /var/www/agents2automate.com.backup.$(date +%Y%m%d_%H%M%S) 2>/dev/null || true
             
             echo "📂 Deploying new files..."
-            sudo cp -r index.html /var/www/agents2automate.com/
+            sudo cp -r *.html /var/www/agents2automate.com/ 2>/dev/null || true
             if [ -d "public" ]; then
-              sudo cp -r public/* /var/www/agents2automate.com/ 2>/dev/null || true
+              sudo cp -r public /var/www/agents2automate.com/ 2>/dev/null || true
             fi
             
             echo "🔧 Setting permissions..."
