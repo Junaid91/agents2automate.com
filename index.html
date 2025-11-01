@@ -81,9 +81,15 @@
         <section class="whatsapp-demo">
             <div class="container">
                 <h2>See AI Automation in Action</h2>
-                <p class="subtitle">Watch how our intelligent system handles real customer conversations on WhatsApp</p>
+                <p class="subtitle">Watch how our intelligent system handles real customer conversations on WhatsApp - in any language!</p>
                 
-                <div class="demo-container">
+                <!-- Example Selector -->
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <button class="example-btn active" onclick="showExample(1)" id="btn1">🌍 English - Fashion Store</button>
+                    <button class="example-btn" onclick="showExample(2)" id="btn2">🇵🇰 Roman Urdu - Tech Store Lahore</button>
+                </div>
+                
+                <div class="demo-container" id="example1">
                     <!-- WhatsApp Phone Mockup -->
                     <div class="phone-mockup">
                         <div class="phone-screen">
@@ -207,6 +213,167 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Example 2: Roman Urdu Tech Store -->
+                <div class="demo-container" id="example2" style="display: none;">
+                    <!-- WhatsApp Phone Mockup -->
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="whatsapp-header">
+                                <div class="business-avatar">📡</div>
+                                <div class="business-info">
+                                    <h3>Tech Hub Lahore</h3>
+                                    <p>AI Assistant • Online</p>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-area">
+                                <!-- Customer Inquiry -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Aoa bhai,</p>
+                                        <p class="message-text" style="margin-top: 4px;">Koi TP link router available hai with double antena wala?</p>
+                                        <div class="message-time">2:15 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Response -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Ws, g bhai available hai. 👍</p>
+                                        <p class="message-text" style="margin-top: 8px;">Ap ko kitna area cover krna hai?</p>
+                                        <div class="message-time">2:15 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Requirement -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Mujeh 100 meter range cover krni hai</p>
+                                        <div class="message-time">2:16 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Product Recommendation -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Phir mai ap ko TP link ka triple antena TL-WR845N recommend kron ga. Ye ap ki 100 meter range easily cover krle ga. 📶</p>
+                                        <div class="product-card">
+                                            <div style="background: linear-gradient(135deg, #128C7E 0%, #075E54 100%); height: 120px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 48px;">📡</div>
+                                            <div class="product-info">
+                                                <strong>TP-Link TL-WR845N</strong>
+                                                <div>Triple Antenna Router</div>
+                                                <div>Range: 100+ meters</div>
+                                                <div style="margin-top: 8px;">
+                                                    <span class="price">Rs. 3,000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="message-time">2:16 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Price Inquiry -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Great, is ki kya price hai?</p>
+                                        <div class="message-time">2:17 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Price Response -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Ye ap ko 3000 mai mil jae ga.</p>
+                                        <div class="message-time">2:17 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Negotiation -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Bhai, ye price kuch zayada hai, 2500 tak krlen</p>
+                                        <div class="message-time">2:18 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Counter Offer -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Ap ko final 2700 mai de don ga. 😊</p>
+                                        <p class="message-text" style="margin-top: 8px;">Ye best price hai bhai, is se kam nahi ho sakti.</p>
+                                        <div class="message-time">2:18 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Accepts -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Theek hai bhai. Mai kb tak lene ajao?</p>
+                                        <div class="message-time">2:19 PM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Store Info -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Bohat acha! 🎉</p>
+                                        <div class="product-card">
+                                            <div class="product-info">
+                                                <strong>✅ Deal Confirmed</strong>
+                                                <div style="margin-top: 8px;">
+                                                    <div>• TP-Link TL-WR845N Router</div>
+                                                    <div>• Triple Antenna</div>
+                                                    <div>• Price: <span class="price">Rs. 2,700</span> <span class="original-price">Rs. 3,000</span></div>
+                                                </div>
+                                                <div class="notification-badge" style="margin-top: 12px;">
+                                                    📧 Order details sent to owner
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="message-text" style="margin-top: 12px;">📞 Please call at: <strong>0312 123 1231</strong></p>
+                                        <p class="message-text" style="margin-top: 4px;">📍 Address: Tech Hub, Main Market, Gulberg, Lahore</p>
+                                        <p class="message-text" style="margin-top: 4px;">⏰ Timing: 10 AM - 10 PM</p>
+                                        <div class="message-time">2:19 PM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Process Steps for Urdu Example -->
+                    <div class="demo-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Roman Urdu Understanding</h3>
+                            <p>AI understands <span class="highlight">local language and slang</span> - "Aoa bhai", "double antena wala". Responds naturally in the same style customers use.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Smart Requirement Analysis</h3>
+                            <p>Instead of just showing products, AI <span class="highlight">asks about coverage area</span> to recommend the perfect router for customer needs.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Contextual Recommendations</h3>
+                            <p>Based on "100 meter range", AI recommends <span class="highlight">triple antenna instead of double</span> - showing technical understanding and customer care.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Cultural Negotiation</h3>
+                            <p>AI negotiates in local style - <span class="highlight">"Ye best price hai bhai"</span>. Offers Rs. 2,700 (10% discount) while maintaining profit margins.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h3>Complete Store Information</h3>
+                            <p>Provides <span class="highlight">phone, address, and timing</span> automatically. Owner gets instant notification with deal details and customer contact.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -259,5 +426,20 @@
     </footer>
 
     <script src="public/js/main.js"></script>
+    <script>
+        function showExample(num) {
+            // Hide all examples
+            document.getElementById('example1').style.display = 'none';
+            document.getElementById('example2').style.display = 'none';
+            
+            // Remove active class from all buttons
+            document.getElementById('btn1').classList.remove('active');
+            document.getElementById('btn2').classList.remove('active');
+            
+            // Show selected example
+            document.getElementById('example' + num).style.display = 'grid';
+            document.getElementById('btn' + num).classList.add('active');
+        }
+    </script>
 </body>
 </html>

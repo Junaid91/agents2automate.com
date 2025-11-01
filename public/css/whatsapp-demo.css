@@ -4,6 +4,31 @@
     padding: 80px 0;
 }
 
+/* Example Selector Buttons */
+.example-btn {
+    background: white;
+    border: 2px solid #25D366;
+    color: #25D366;
+    padding: 12px 24px;
+    margin: 0 8px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.example-btn:hover {
+    background: #f0f2f5;
+    transform: translateY(-2px);
+}
+
+.example-btn.active {
+    background: #25D366;
+    color: white;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
 .whatsapp-demo h2 {
     text-align: center;
     color: var(--text-dark);
@@ -278,5 +303,12 @@
 
     .chat-area {
         height: 400px;
+    }
+
+    .example-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+        margin: 4px;
+        display: inline-block;
     }
 }
