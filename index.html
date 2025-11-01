@@ -84,9 +84,12 @@
                 <p class="subtitle">Watch how our intelligent system handles real customer conversations on WhatsApp - in any language!</p>
                 
                 <!-- Example Selector -->
-                <div style="text-align: center; margin-bottom: 2rem;">
-                    <button class="example-btn active" onclick="showExample(1)" id="btn1">🌍 English - Fashion Store</button>
+                <div style="text-align: center; margin-bottom: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+                    <button class="example-btn active" onclick="showExample(1)" id="btn1">🇬🇧 English - Fashion Store UK</button>
                     <button class="example-btn" onclick="showExample(2)" id="btn2">🇵🇰 Roman Urdu - Tech Store Lahore</button>
+                    <button class="example-btn" onclick="showExample(3)" id="btn3">🇮🇳 Hindi - Electronics Delhi</button>
+                    <button class="example-btn" onclick="showExample(4)" id="btn4">🇩🇪 German - Pharmacy Berlin</button>
+                    <button class="example-btn" onclick="showExample(5)" id="btn5">🇪🇸 Spanish - Restaurant Madrid</button>
                 </div>
                 
                 <div class="demo-container" id="example1">
@@ -374,6 +377,442 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Example 3: Hindi Electronics Delhi -->
+                <div class="demo-container" id="example3" style="display: none;">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="whatsapp-header">
+                                <div class="business-avatar">📱</div>
+                                <div class="business-info">
+                                    <h3>TechMart Delhi</h3>
+                                    <p>AI Assistant • Online</p>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-area">
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Namaste bhai! Koi achha smartphone hai under 20000?</p>
+                                        <div class="message-time">11:30 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Namaste ji! Bilkul hai. Aapko kis brand pasand hai aur kya use karna hai mainly?</p>
+                                        <div class="message-time">11:30 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Samsung ya Xiaomi chalega. Gaming aur camera achha hona chahiye</p>
+                                        <div class="message-time">11:31 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Perfect! Main aapko Xiaomi Redmi Note 13 Pro suggest karunga. Gaming ke liye powerful processor hai aur 200MP camera bhi hai! 📸</p>
+                                        <div class="product-card">
+                                            <div style="background: linear-gradient(135deg, #FF6900 0%, #FCB900 100%); height: 120px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 48px;">📱</div>
+                                            <div class="product-info">
+                                                <strong>Xiaomi Redmi Note 13 Pro</strong>
+                                                <div>• 8GB RAM + 128GB Storage</div>
+                                                <div>• 200MP Camera</div>
+                                                <div>• 5000mAh Battery</div>
+                                                <div style="margin-top: 8px;">
+                                                    <span class="price">₹19,999</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="message-time">11:31 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Waah! Stock mein hai abhi? Aur kuch discount mil sakta hai?</p>
+                                        <div class="message-time">11:32 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Haan ji, stock mein hai! Blue aur Black color available hai. 😊</p>
+                                        <p class="message-text" style="margin-top: 8px;">Aaj special offer hai - ₹18,500 mein de sakte hain with 1 year warranty!</p>
+                                        <div class="message-time">11:32 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">17500 mein ho jaye to abhi order kar deta hoon</p>
+                                        <div class="message-time">11:33 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Theek hai sir, aapke liye ₹18,000 final price. Isse kam nahi ho payega kyunki bahut kam margin hai. But free tempered glass aur cover bhi dunga! 🎁</p>
+                                        <div class="message-time">11:33 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Done! Black color chahiye. COD available hai?</p>
+                                        <div class="message-time">11:34 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Bahut badhiya! 🎉</p>
+                                        <div class="product-card">
+                                            <div class="product-info">
+                                                <strong>✅ Order Confirmed</strong>
+                                                <div style="margin-top: 8px;">
+                                                    <div>• Xiaomi Redmi Note 13 Pro</div>
+                                                    <div>• Color: Black | 8GB/128GB</div>
+                                                    <div>• Price: <span class="price">₹18,000</span> <span class="original-price">₹19,999</span></div>
+                                                    <div>• FREE: Tempered Glass + Cover</div>
+                                                    <div>• COD Available ✓</div>
+                                                </div>
+                                                <div class="notification-badge" style="margin-top: 12px;">
+                                                    📧 Order details sent to owner
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="message-text" style="margin-top: 12px;">📍 <strong>Store Address:</strong> Shop 45, Nehru Place, Delhi</p>
+                                        <p class="message-text" style="margin-top: 4px;">📞 <strong>Call:</strong> +91 98765 43210</p>
+                                        <p class="message-text" style="margin-top: 4px;">🚚 <strong>Delivery:</strong> Same day in Delhi NCR</p>
+                                        <div class="message-time">11:34 AM</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Hindi Language Mastery</h3>
+                            <p>AI understands <span class="highlight">Roman Hindi naturally</span> - "Namaste ji", "achha smartphone", "chalega". Responds in the same conversational style Indians use daily.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Intelligent Requirement Gathering</h3>
+                            <p>Instead of showing random phones, AI <span class="highlight">asks about brand preference and usage</span> (gaming, camera) to recommend the perfect match.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Real-Time Stock Verification</h3>
+                            <p>AI <span class="highlight">checks live inventory</span> and confirms "Blue aur Black color available hai" - showing actual stock status, not just catalog items.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Smart Negotiation with Value-Add</h3>
+                            <p>Customer wants ₹17,500, AI counters with ₹18,000 but <span class="highlight">adds free accessories</span> (tempered glass + cover) to sweeten the deal while protecting margins.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h3>Complete Order Processing</h3>
+                            <p>Confirms COD availability, provides <span class="highlight">store location, contact, and delivery time</span>. Owner gets instant notification with all deal details.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 4: German Pharmacy Berlin -->
+                <div class="demo-container" id="example4" style="display: none;">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="whatsapp-header">
+                                <div class="business-avatar">💊</div>
+                                <div class="business-info">
+                                    <h3>Apotheke Berlin</h3>
+                                    <p>AI Assistant • Online</p>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-area">
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Guten Tag! Haben Sie Ibuprofen 400mg auf Lager?</p>
+                                        <div class="message-time">14:20</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Guten Tag! Ja, wir haben Ibuprofen 400mg vorrätig. Benötigen Sie ein Rezept oder möchten Sie die rezeptfreie Variante?</p>
+                                        <div class="message-time">14:20</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Rezeptfrei bitte. Wie viele Tabletten sind in einer Packung?</p>
+                                        <div class="message-time">14:21</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Wir haben zwei Optionen für Sie:</p>
+                                        <div class="product-card">
+                                            <div style="background: linear-gradient(135deg, #00B4D8 0%, #0077B6 100%); height: 100px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 40px;">💊</div>
+                                            <div class="product-info">
+                                                <strong>Ibuprofen 400mg</strong>
+                                                <div>• 20 Tabletten - €8.90</div>
+                                                <div>• 50 Tabletten - €18.50</div>
+                                                <div style="margin-top: 6px; font-size: 13px; color: #667781;">Beide auf Lager ✓</div>
+                                            </div>
+                                        </div>
+                                        <div class="message-time">14:21</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Die 50er Packung nehme ich. Können Sie heute noch liefern?</p>
+                                        <div class="message-time">14:22</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Perfekt! Ja, wir liefern heute noch innerhalb 2 Stunden in Berlin-Mitte. Lieferung kostet €3.50.</p>
+                                        <p class="message-text" style="margin-top: 8px;">Gesamtpreis: €22.00 (€18.50 + €3.50 Lieferung)</p>
+                                        <div class="message-time">14:22</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Gut! Kann ich mit Karte bezahlen bei Lieferung?</p>
+                                        <div class="message-time">14:23</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Ja, natürlich! Unser Fahrer hat ein mobiles Kartenlesegerät. 💳</p>
+                                        <div class="product-card">
+                                            <div class="product-info">
+                                                <strong>✅ Bestellung Bestätigt</strong>
+                                                <div style="margin-top: 8px;">
+                                                    <div>• Ibuprofen 400mg (50 Tabletten)</div>
+                                                    <div>• Lieferung: Heute, ca. 16:30</div>
+                                                    <div>• Preis: <span class="price">€22.00</span></div>
+                                                    <div>• Zahlung: Karte bei Lieferung</div>
+                                                </div>
+                                                <div class="notification-badge" style="margin-top: 12px;">
+                                                    📧 Bestellung an Apotheker gesendet
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="message-text" style="margin-top: 12px;">📍 <strong>Apotheke:</strong> Friedrichstraße 123, 10117 Berlin</p>
+                                        <p class="message-text" style="margin-top: 4px;">📞 <strong>Telefon:</strong> +49 30 1234567</p>
+                                        <p class="message-text" style="margin-top: 4px;">Gute Besserung! 🌟</p>
+                                        <div class="message-time">14:23</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>German Language Precision</h3>
+                            <p>AI handles <span class="highlight">formal German perfectly</span> - proper grammar, professional tone. Understands pharmacy-specific terminology and regulations.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Regulatory Compliance</h3>
+                            <p>AI <span class="highlight">asks about prescription requirements</span> - showing understanding of German pharmacy laws and OTC vs. prescription medications.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Smart Product Comparison</h3>
+                            <p>Instead of single option, AI shows <span class="highlight">two package sizes with pricing</span>, helping customer choose best value while checking real-time stock.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Delivery & Payment Intelligence</h3>
+                            <p>AI automatically <span class="highlight">calculates delivery time and cost</span>, confirms payment methods, and provides total price transparency.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h3>Professional Service Completion</h3>
+                            <p>Confirms order with <span class="highlight">delivery ETA, payment method, and contact info</span>. Ends with "Gute Besserung!" (Get well soon) - culturally appropriate.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Example 5: Spanish Restaurant Madrid -->
+                <div class="demo-container" id="example5" style="display: none;">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="whatsapp-header">
+                                <div class="business-avatar">🍽️</div>
+                                <div class="business-info">
+                                    <h3>Restaurante Madrid</h3>
+                                    <p>AI Assistant • Online</p>
+                                </div>
+                            </div>
+                            
+                            <div class="chat-area">
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">¡Hola! ¿Tienen mesa disponible para 4 personas esta noche?</p>
+                                        <div class="message-time">18:45</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">¡Hola! Sí, tenemos disponibilidad. ¿A qué hora prefieren cenar?</p>
+                                        <div class="message-time">18:45</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Sobre las 21:00. ¿Tienen menú especial hoy?</p>
+                                        <div class="message-time">18:46</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">¡Perfecto! Mesa para 4 a las 21:00 ✓</p>
+                                        <p class="message-text" style="margin-top: 8px;">Hoy tenemos nuestro menú degustación especial:</p>
+                                        <div class="product-card">
+                                            <div style="background: linear-gradient(135deg, #E63946 0%, #A4161A 100%); height: 100px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 40px;">🍽️</div>
+                                            <div class="product-info">
+                                                <strong>Menú Degustación</strong>
+                                                <div>• Jamón Ibérico de Bellota</div>
+                                                <div>• Paella Valenciana</div>
+                                                <div>• Tarta de Santiago</div>
+                                                <div>• Vino Rioja incluido</div>
+                                                <div style="margin-top: 8px;">
+                                                    <span class="price">€45/persona</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="message-time">18:46</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">¡Suena delicioso! Pero €45 es un poco caro. ¿Tienen algo más económico?</p>
+                                        <div class="message-time">18:47</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Entiendo. Tenemos el menú del día por €28/persona que incluye entrante, principal y postre. 😊</p>
+                                        <p class="message-text" style="margin-top: 8px;">O puedo ofrecerles el menú degustación por €40/persona si reservan para 4 personas. ¡Es nuestra mejor oferta!</p>
+                                        <div class="message-time">18:47</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">¡Perfecto! El menú degustación a €40 por favor. ¿Necesitan algún dato más?</p>
+                                        <div class="message-time">18:48</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">¡Excelente elección! 🎉</p>
+                                        <div class="product-card">
+                                            <div class="product-info">
+                                                <strong>✅ Reserva Confirmada</strong>
+                                                <div style="margin-top: 8px;">
+                                                    <div>• Fecha: Hoy, 21:00</div>
+                                                    <div>• Personas: 4</div>
+                                                    <div>• Menú: Degustación</div>
+                                                    <div>• Precio: <span class="price">€160</span> <span class="original-price">€180</span></div>
+                                                    <div>• (€40 x 4 personas)</div>
+                                                </div>
+                                                <div class="notification-badge" style="margin-top: 12px;">
+                                                    📧 Reserva enviada al chef
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="message-text" style="margin-top: 12px;">Solo necesito su nombre para la reserva, por favor.</p>
+                                        <div class="message-time">18:48</div>
+                                    </div>
+                                </div>
+
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Carlos Rodríguez</p>
+                                        <div class="message-time">18:49</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">¡Perfecto, Sr. Rodríguez! Su mesa está reservada. 🍷</p>
+                                        <p class="message-text" style="margin-top: 8px;">📍 <strong>Dirección:</strong> Calle Mayor 28, 28013 Madrid</p>
+                                        <p class="message-text" style="margin-top: 4px;">📞 <strong>Teléfono:</strong> +34 91 234 5678</p>
+                                        <p class="message-text" style="margin-top: 4px;">🅿️ Parking disponible en la calle</p>
+                                        <p class="message-text" style="margin-top: 8px;">¡Les esperamos! ¡Buen provecho! 😊</p>
+                                        <div class="message-time">18:49</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="demo-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Spanish Cultural Fluency</h3>
+                            <p>AI uses <span class="highlight">natural Spanish expressions</span> - "¡Hola!", "¡Buen provecho!" - and understands dining culture (late dinner at 21:00 is normal in Spain).</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Real-Time Table Management</h3>
+                            <p>AI <span class="highlight">checks live reservation system</span>, confirms availability for specific time and party size, preventing double-bookings.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Upselling with Alternatives</h3>
+                            <p>When customer finds price high, AI <span class="highlight">offers both cheaper option (€28) and discounted premium (€40)</span> - smart sales strategy.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Group Discount Calculation</h3>
+                            <p>AI automatically <span class="highlight">applies group discount</span> (€45→€40) and calculates total (€160 for 4 people), showing transparency and value.</p>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <h3>Complete Reservation Service</h3>
+                            <p>Collects customer name, confirms reservation, provides <span class="highlight">address, phone, parking info</span>. Chef gets instant notification with all details.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -419,12 +858,10 @@
     <script>
         function showExample(num) {
             // Hide all examples
-            document.getElementById('example1').style.display = 'none';
-            document.getElementById('example2').style.display = 'none';
-            
-            // Remove active class from all buttons
-            document.getElementById('btn1').classList.remove('active');
-            document.getElementById('btn2').classList.remove('active');
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById('example' + i).style.display = 'none';
+                document.getElementById('btn' + i).classList.remove('active');
+            }
             
             // Show selected example
             document.getElementById('example' + num).style.display = 'grid';
