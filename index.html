@@ -86,10 +86,10 @@
                 <!-- Example Selector -->
                 <div style="text-align: center; margin-bottom: 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
                     <button class="example-btn active" onclick="showExample(1)" id="btn1">🇬🇧 English - Fashion Store UK</button>
-                    <button class="example-btn" onclick="showExample(2)" id="btn2">🇵🇰 Roman Urdu - Tech Store Lahore</button>
-                    <button class="example-btn" onclick="showExample(3)" id="btn3">🇮🇳 Hindi - Electronics Delhi</button>
-                    <button class="example-btn" onclick="showExample(4)" id="btn4">🇩🇪 German - Pharmacy Berlin</button>
-                    <button class="example-btn" onclick="showExample(5)" id="btn5">🇪🇸 Spanish - Restaurant Madrid</button>
+                    <button class="example-btn" onclick="showExample(2)" id="btn2">🇩🇪 German - Pharmacy Berlin</button>
+                    <button class="example-btn" onclick="showExample(3)" id="btn3">🇪🇸 Spanish - Restaurant Madrid</button>
+                    <button class="example-btn" onclick="showExample(4)" id="btn4">🇵🇰 Roman Urdu - Tech Store Lahore</button>
+                    <button class="example-btn" onclick="showExample(5)" id="btn5">🇮🇳 Hindi - Electronics Delhi</button>
                 </div>
                 
                 <div class="demo-container" id="example1">
@@ -108,75 +108,154 @@
                                 <!-- Customer Inquiry -->
                                 <div class="message customer">
                                     <div class="message-bubble">
-                                        <p class="message-text">Hi! Do you have any formal shirts available?</p>
+                                        <p class="message-text">Hi there! I'm looking for a formal shirt for a job interview next week. Do you have anything in stock?</p>
                                         <div class="message-time">10:23 AM</div>
                                     </div>
                                 </div>
 
-                                <!-- AI Response with Product -->
+                                <!-- AI Response -->
                                 <div class="message ai">
                                     <div class="message-bubble">
-                                        <p class="message-text">Hello! Yes, we have some great formal shirts in stock. Let me show you our premium collection:</p>
+                                        <p class="message-text">Hello! Congratulations on your interview! 🎉 I'd be happy to help you find the perfect shirt.</p>
+                                        <p class="message-text" style="margin-top: 8px;">What's your preferred color? Most people go for white or light blue for interviews, but we have other options too.</p>
+                                        <div class="message-time">10:23 AM</div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Response -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">White would be perfect. What size do you have? I usually wear Large.</p>
+                                        <div class="message-time">10:24 AM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Stock Check -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Great choice! Let me check our inventory for you...</p>
+                                        <div class="message-time">10:24 AM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Product Display -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Perfect! We have the white formal shirt in Large. Here's what I found:</p>
                                         <div class="product-card">
                                             <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); height: 120px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 48px;">👔</div>
                                             <div class="product-info">
                                                 <strong>Premium Cotton Formal Shirt</strong>
-                                                <div>Color: White, Blue, Black</div>
-                                                <div>Sizes: M, L, XL available</div>
+                                                <div>• 100% Egyptian Cotton</div>
+                                                <div>• Non-iron finish</div>
+                                                <div>• Slim fit design</div>
+                                                <div>• Size: Large (in stock ✓)</div>
                                                 <div style="margin-top: 8px;">
-                                                    <span class="price">$45.00</span>
+                                                    <span class="price">£45.00</span>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="message-time">10:23 AM</div>
+                                        <p class="message-text" style="margin-top: 8px;">This is our bestseller! The non-iron finish is perfect for interviews - you'll look sharp all day. 😊</p>
+                                        <div class="message-time">10:25 AM</div>
                                     </div>
                                 </div>
 
-                                <!-- Customer Interest -->
+                                <!-- Customer Price Concern -->
                                 <div class="message customer">
                                     <div class="message-bubble">
-                                        <p class="message-text">Nice! I need size L in white. But $45 is a bit high for me. Can you do $35?</p>
-                                        <div class="message-time">10:25 AM</div>
+                                        <p class="message-text">It looks really nice! But £45 is a bit more than I was planning to spend. I was thinking around £35-40. Is there any way you could help me out?</p>
+                                        <div class="message-time">10:26 AM</div>
                                     </div>
                                 </div>
 
-                                <!-- AI Negotiation -->
+                                <!-- AI Empathy & Negotiation -->
                                 <div class="message ai">
                                     <div class="message-bubble">
-                                        <p class="message-text">I understand your budget concern! 😊 Let me check what I can do for you...</p>
-                                        <p class="message-text" style="margin-top: 8px;">I can offer you a special discount today! How about <strong>$40</strong> for the white formal shirt in size L? This is our best price and includes free shipping!</p>
-                                        <div class="message-time">10:25 AM</div>
+                                        <p class="message-text">I completely understand - job hunting can be expensive! Let me see what I can do for you... 🤔</p>
+                                        <div class="message-time">10:26 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Good news! Since this is for an important interview, I can offer you a special discount. How about <strong>£40</strong>?</p>
+                                        <p class="message-text" style="margin-top: 8px;">That's £5 off, and I'll also throw in <strong>free next-day delivery</strong> so you have it well before your interview. Sound fair?</p>
+                                        <div class="message-time">10:27 AM</div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Counter Offer -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">That's better, thanks! Could you possibly do £38? That would really help me stay within budget.</p>
+                                        <div class="message-time">10:28 AM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Final Negotiation -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">I appreciate your honesty! Let me check with my manager...</p>
+                                        <div class="message-time">10:28 AM</div>
+                                    </div>
+                                </div>
+
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Alright, you've got a deal! £38 it is. 🤝</p>
+                                        <p class="message-text" style="margin-top: 8px;">I really want you to feel confident in your interview, so I'm happy to help. You're getting:</p>
+                                        <p class="message-text" style="margin-top: 8px;">✓ Premium Egyptian cotton shirt<br>✓ £7 discount (was £45)<br>✓ FREE next-day delivery<br>✓ 30-day returns if it doesn't fit</p>
+                                        <div class="message-time">10:29 AM</div>
                                     </div>
                                 </div>
 
                                 <!-- Customer Accepts -->
                                 <div class="message customer">
                                     <div class="message-bubble">
-                                        <p class="message-text">That works! I'll take it at $40 👍</p>
-                                        <div class="message-time">10:26 AM</div>
+                                        <p class="message-text">Wow, thank you so much! That's really kind of you. Yes, let's do it! 😊</p>
+                                        <div class="message-time">10:30 AM</div>
                                     </div>
                                 </div>
 
                                 <!-- AI Confirms Order -->
                                 <div class="message ai">
                                     <div class="message-bubble">
-                                        <p class="message-text">Excellent choice! 🎉</p>
+                                        <p class="message-text">Fantastic! I'm excited for you! 🎉 Let me get this processed...</p>
                                         <div class="product-card">
                                             <div class="product-info">
                                                 <strong>✅ Order Confirmed</strong>
                                                 <div style="margin-top: 8px;">
                                                     <div>• Premium Cotton Formal Shirt</div>
-                                                    <div>• Size: L | Color: White</div>
-                                                    <div>• Price: <span class="price">$40.00</span> <span class="original-price">$45.00</span></div>
-                                                    <div>• Free Shipping Included</div>
+                                                    <div>• Size: Large | Color: White</div>
+                                                    <div>• Price: <span class="price">£38.00</span> <span class="original-price">£45.00</span></div>
+                                                    <div>• You saved: £7.00 (15% off)</div>
+                                                    <div>• FREE Next-Day Delivery</div>
                                                 </div>
                                                 <div class="notification-badge" style="margin-top: 12px;">
                                                     📧 Order details sent to owner
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="message-text" style="margin-top: 8px;">Please share your delivery address, and I'll process your order right away!</p>
-                                        <div class="message-time">10:26 AM</div>
+                                        <p class="message-text" style="margin-top: 12px;">Could you please share your delivery address? I'll make sure it arrives tomorrow! 📦</p>
+                                        <div class="message-time">10:30 AM</div>
+                                    </div>
+                                </div>
+
+                                <!-- Customer Provides Address -->
+                                <div class="message customer">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Sure! 123 Oxford Street, London, W1D 2HG</p>
+                                        <div class="message-time">10:31 AM</div>
+                                    </div>
+                                </div>
+
+                                <!-- AI Final Confirmation -->
+                                <div class="message ai">
+                                    <div class="message-bubble">
+                                        <p class="message-text">Perfect! All set! ✓</p>
+                                        <p class="message-text" style="margin-top: 8px;">📍 Delivery to: 123 Oxford Street, London, W1D 2HG<br>📅 Arriving: Tomorrow by 6 PM<br>📧 Confirmation sent to your email</p>
+                                        <p class="message-text" style="margin-top: 12px;">Good luck with your interview! You're going to do great! 💪 If you need anything else, just message me.</p>
+                                        <div class="message-time">10:31 AM</div>
                                     </div>
                                 </div>
                             </div>
@@ -187,38 +266,38 @@
                     <div class="demo-steps">
                         <div class="step">
                             <div class="step-number">1</div>
-                            <h3>Customer Inquiry</h3>
-                            <p>Customer asks about formal shirts. Our <span class="highlight">AI understands natural language</span> and context, identifying the product category instantly.</p>
+                            <h3>Contextual Understanding</h3>
+                            <p>AI understands <span class="highlight">"job interview next week"</span> and responds with empathy ("Congratulations!"). Asks smart questions about color preference, showing human-like conversation flow.</p>
                         </div>
 
                         <div class="step">
                             <div class="step-number">2</div>
-                            <h3>Smart Product Display</h3>
-                            <p>AI automatically <span class="highlight">checks inventory in real-time</span> and presents available products with images, details, and pricing.</p>
+                            <h3>Real-Time Inventory Check</h3>
+                            <p>AI <span class="highlight">checks live stock</span> for "Large" size in "White" and confirms availability instantly. Shows detailed product specs (Egyptian cotton, non-iron, slim fit) with reasoning.</p>
                         </div>
 
                         <div class="step">
                             <div class="step-number">3</div>
-                            <h3>Intelligent Negotiation</h3>
-                            <p>Customer requests lower price. AI <span class="highlight">negotiates within your rules</span>, offering $40 (within 10% margin) while maintaining profitability.</p>
+                            <h3>Empathetic Negotiation</h3>
+                            <p>Customer wants £35-40, AI shows <span class="highlight">genuine empathy</span> ("job hunting can be expensive"). Offers £40 with free delivery. When customer counters with £38, AI "checks with manager" (human-like behavior) and accepts.</p>
                         </div>
 
                         <div class="step">
                             <div class="step-number">4</div>
-                            <h3>Deal Finalization</h3>
-                            <p>Order confirmed! AI <span class="highlight">automatically notifies the business owner</span> with complete deal details: product, price, customer info, and profit margin.</p>
+                            <h3>Value-Add Strategy</h3>
+                            <p>AI doesn't just discount - adds <span class="highlight">FREE next-day delivery + 30-day returns</span>. Shows savings clearly (£7 off, 15%). Makes customer feel they got a great deal, not just a discount.</p>
                         </div>
 
                         <div class="step">
                             <div class="step-number">5</div>
-                            <h3>Continuous Learning</h3>
-                            <p>Every interaction improves the AI. It learns <span class="highlight">customer preferences, negotiation patterns, and optimal pricing</span> strategies.</p>
+                            <h3>Complete Service & Follow-up</h3>
+                            <p>Collects address, confirms delivery details, sends email confirmation. Ends with <span class="highlight">encouragement</span> ("Good luck with your interview!") - building customer loyalty beyond the sale.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Example 2: Roman Urdu Tech Store -->
-                <div class="demo-container" id="example2" style="display: none;">
+                <!-- Example 4: Roman Urdu Tech Store -->
+                <div class="demo-container" id="example4" style="display: none;">
                     <!-- WhatsApp Phone Mockup -->
                     <div class="phone-mockup">
                         <div class="phone-screen">
@@ -378,8 +457,8 @@
                     </div>
                 </div>
 
-                <!-- Example 3: Hindi Electronics Delhi -->
-                <div class="demo-container" id="example3" style="display: none;">
+                <!-- Example 5: Hindi Electronics Delhi -->
+                <div class="demo-container" id="example5" style="display: none;">
                     <div class="phone-mockup">
                         <div class="phone-screen">
                             <div class="whatsapp-header">
@@ -528,8 +607,8 @@
                     </div>
                 </div>
 
-                <!-- Example 4: German Pharmacy Berlin -->
-                <div class="demo-container" id="example4" style="display: none;">
+                <!-- Example 2: German Pharmacy Berlin -->
+                <div class="demo-container" id="example2" style="display: none;">
                     <div class="phone-mockup">
                         <div class="phone-screen">
                             <div class="whatsapp-header">
@@ -660,8 +739,8 @@
                     </div>
                 </div>
 
-                <!-- Example 5: Spanish Restaurant Madrid -->
-                <div class="demo-container" id="example5" style="display: none;">
+                <!-- Example 3: Spanish Restaurant Madrid -->
+                <div class="demo-container" id="example3" style="display: none;">
                     <div class="phone-mockup">
                         <div class="phone-screen">
                             <div class="whatsapp-header">
